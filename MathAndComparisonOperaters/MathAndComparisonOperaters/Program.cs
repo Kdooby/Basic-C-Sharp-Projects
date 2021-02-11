@@ -10,57 +10,39 @@ namespace MathAndComparisonOperaters
     {
         static void Main()
         {
-            Console.WriteLine("Anonymous Income Comparison Program");
-            Console.ReadLine();
-
+            
             // Person 1
+            Console.WriteLine("Anonymous Income Comparison Program");
+            Console.WriteLine("Person 1: ");
+            Console.WriteLine("What is person1's Hourly Rate?");
+            double userInput = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Person 1");
-            Console.WriteLine(); //Line Break
-            Console.WriteLine("Hourly Rate: ");
-            string howMuch1 = Console.ReadLine();
-            double hourly1 = Convert.ToDouble(howMuch1);
-            Console.WriteLine(hourly1);
-            Console.WriteLine(); //Line Break
-            Console.WriteLine("Hours Per Week: ");
-            string howMany1 = Console.ReadLine();
-            double hoursWeek1 = Convert.ToDouble(howMany1);
-            Console.WriteLine(hoursWeek1);
-            Console.ReadLine();
+            Console.WriteLine("How many hours does Person1 work per week?");
+            double userInput2 = Convert.ToDouble(Console.ReadLine());
 
             // Person 2
+            Console.WriteLine("Person 2: ");
+            Console.WriteLine("What is person's 2 hourly Rate");
+            double userInput3 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Person 2");
-            Console.WriteLine(); //Line Break
-            Console.WriteLine("Hourly Rate: ");
-            string howMuch2 = Console.ReadLine();
-            double hourly2 = Convert.ToDouble(howMuch2);
-            Console.WriteLine(hourly2);
-            Console.WriteLine(); //Line Break
-            Console.WriteLine("Hours Per Week: ");
-            string howMany2 = Console.ReadLine();
-            double hoursWeek2 = Convert.ToDouble(howMany2);
-            Console.ReadLine();
+            Console.WriteLine("How many hours does person2 work per week?");
+            double userInput4 = Convert.ToDouble(Console.ReadLine());
 
-            // Annual Salary
+            // Comparison 
 
-            Console.WriteLine("Annual Salary of Person 1: ");
-            double weeklySalary1 = hourly1 * hoursWeek1;
-            double annualSalary1 = weeklySalary1 * 52;
-            Console.WriteLine(annualSalary1);
-            Console.ReadLine();
+            Console.WriteLine("The annual salary of Person 1 is:");
+            double income1 = userInput * userInput2 * 52;
+            Console.WriteLine(income1);
+            Console.WriteLine("The annual salary of Person 2 is:");
+            double income2 = userInput3 * userInput4 * 52;
+            Console.WriteLine(income2);
 
-            Console.WriteLine("Annual Salary of Person 2: ");
-            double weeklySalary2 = hourly2 * hoursWeek2;
-            double annualSalary2 = weeklySalary2 * 52;
-            Console.WriteLine(annualSalary2);
-            Console.ReadLine();
-
-            // Comparison
-
+            // Boolean check
             Console.WriteLine("Does Person 1 make more money than Person 2?");
-            bool p1Morep2 = annualSalary1 > annualSalary2;
-            Console.WriteLine(p1Morep2);
+            double person1 = income1;
+            double person2 = income2;
+            bool value = person1 > person2;
+            Console.WriteLine(value);
             Console.ReadLine();
 
 
