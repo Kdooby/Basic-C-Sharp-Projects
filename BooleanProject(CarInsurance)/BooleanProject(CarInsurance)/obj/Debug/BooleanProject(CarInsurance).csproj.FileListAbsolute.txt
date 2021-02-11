@@ -1,0 +1,7 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanProject(CarInsurance)\BooleanProject(CarInsurance)\bin\Debug\BooleanProject(CarInsurance).exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanProject(CarInsurance)\BooleanProject(CarInsurance)\bin\Debug\BooleanProject(CarInsurance).exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanProject(CarInsurance)\BooleanProject(CarInsurance)\bin\Debug\BooleanProject(CarInsurance).pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanProject(CarInsurance)\BooleanProject(CarInsurance)\obj\Debug\BooleanProject(CarInsurance).csprojAssemblyReference.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanProject(CarInsurance)\BooleanProject(CarInsurance)\obj\Debug\BooleanProject(CarInsurance).csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanProject(CarInsurance)\BooleanProject(CarInsurance)\obj\Debug\BooleanProject(CarInsurance).exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanProject(CarInsurance)\BooleanProject(CarInsurance)\obj\Debug\BooleanProject(CarInsurance).pdb

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooleanLogic", "BooleanLogic\BooleanLogic.csproj", "{77F13FC2-0A13-4932-884B-312083749190}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooleanProject(CarInsurance)", "BooleanProject(CarInsurance)\BooleanProject(CarInsurance).csproj", "{C85ECCFC-A193-4CA9-A7B7-143C2EF8F911}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{77F13FC2-0A13-4932-884B-312083749190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77F13FC2-0A13-4932-884B-312083749190}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77F13FC2-0A13-4932-884B-312083749190}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77F13FC2-0A13-4932-884B-312083749190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C85ECCFC-A193-4CA9-A7B7-143C2EF8F911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C85ECCFC-A193-4CA9-A7B7-143C2EF8F911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C85ECCFC-A193-4CA9-A7B7-143C2EF8F911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C85ECCFC-A193-4CA9-A7B7-143C2EF8F911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1DC0C82E-A50D-4EAA-B01E-6BBA9BB9DDC4}
+		SolutionGuid = {BEBC2EFD-14F2-403D-9C09-E691A1C4E506}
 	EndGlobalSection
 EndGlobal
