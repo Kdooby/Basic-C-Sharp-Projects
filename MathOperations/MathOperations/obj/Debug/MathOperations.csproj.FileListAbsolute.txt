@@ -1,0 +1,6 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\MathOperations\MathOperations\bin\Debug\MathOperations.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\MathOperations\MathOperations\bin\Debug\MathOperations.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\MathOperations\MathOperations\bin\Debug\MathOperations.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\MathOperations\MathOperations\obj\Debug\MathOperations.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\MathOperations\MathOperations\obj\Debug\MathOperations.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\MathOperations\MathOperations\obj\Debug\MathOperations.pdb
