@@ -18,13 +18,14 @@ namespace MathAndComparisonOperaters
             Console.WriteLine("Person 1");
             Console.WriteLine(); //Line Break
             Console.WriteLine("Hourly Rate: ");
-            double hourly1 = 16.15;
+            string howMuch1 = Console.ReadLine();
+            double hourly1 = Convert.ToDouble(howMuch1);
             Console.WriteLine(hourly1);
             Console.WriteLine(); //Line Break
             Console.WriteLine("Hours Per Week: ");
-            double hoursWeek1 = 37.8;
+            string howMany1 = Console.ReadLine();
+            double hoursWeek1 = Convert.ToDouble(howMany1);
             Console.WriteLine(hoursWeek1);
-            Console.WriteLine(); //Line Break
             Console.ReadLine();
 
             // Person 2
@@ -32,13 +33,13 @@ namespace MathAndComparisonOperaters
             Console.WriteLine("Person 2");
             Console.WriteLine(); //Line Break
             Console.WriteLine("Hourly Rate: ");
-            double hourly2 = 15.67;
+            string howMuch2 = Console.ReadLine();
+            double hourly2 = Convert.ToDouble(howMuch2);
             Console.WriteLine(hourly2);
             Console.WriteLine(); //Line Break
             Console.WriteLine("Hours Per Week: ");
-            double hoursWeek2 = 39.0;
-            Console.WriteLine(hoursWeek2);
-            Console.WriteLine(); //Line Break
+            string howMany2 = Console.ReadLine();
+            double hoursWeek2 = Convert.ToDouble(howMany2);
             Console.ReadLine();
 
             // Annual Salary
