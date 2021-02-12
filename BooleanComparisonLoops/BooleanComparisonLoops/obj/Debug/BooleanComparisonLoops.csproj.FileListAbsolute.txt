@@ -1,0 +1,6 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanComparisonLoops\BooleanComparisonLoops\bin\Debug\BooleanComparisonLoops.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanComparisonLoops\BooleanComparisonLoops\bin\Debug\BooleanComparisonLoops.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanComparisonLoops\BooleanComparisonLoops\bin\Debug\BooleanComparisonLoops.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanComparisonLoops\BooleanComparisonLoops\obj\Debug\BooleanComparisonLoops.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanComparisonLoops\BooleanComparisonLoops\obj\Debug\BooleanComparisonLoops.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\BooleanComparisonLoops\BooleanComparisonLoops\obj\Debug\BooleanComparisonLoops.pdb
