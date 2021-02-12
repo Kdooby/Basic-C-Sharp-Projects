@@ -38,10 +38,10 @@ namespace Branching
             Console.WriteLine("Enter Package Length: ");
             decimal packageLength = Convert.ToDecimal(Console.ReadLine());
 
-            decimal dimensions = packageWidth + packageHeight + packageLength;
+            decimal dimensions1 = packageWidth + packageHeight + packageLength;
+            decimal dimensions2 = packageWidth * packageHeight * packageLength;
 
-
-            if (dimensions > 50)
+            if (dimensions1 > 50)
             {
                 Console.WriteLine("Package too big to be shipped via Package Express. Goodbye");
                 Console.ReadLine();
@@ -51,7 +51,7 @@ namespace Branching
             else
             {
                 Console.WriteLine("Shipping Quote: ");
-                decimal quote = dimensions * packageWeight / 100;
+                decimal quote = dimensions2 * packageWeight / 100;
                 Console.WriteLine(quote);
         
             }
