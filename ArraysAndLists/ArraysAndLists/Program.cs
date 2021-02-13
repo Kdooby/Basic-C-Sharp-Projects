@@ -60,13 +60,13 @@ using System.Collections.Generic;
         stringList.Add("Kon'nichiwa");
         stringList.Add("Aloha");
 
-        Console.WriteLine("Choose an index between 0 and 5 to be greeted in a specific langauage");
+        Console.WriteLine("Choose an index between 0 and 4 to be greeted in a specific langauage");
         int greetInput = Convert.ToInt32(Console.ReadLine());
 
-        while (greetInput < 0 || greetInput >= 6) //if input is less than 0 or greater than/equal to 6
+        while (greetInput < 0 || greetInput >= 5) //if input is less than 0 or greater than/equal to 6
         {
             Console.WriteLine("This is not a correct index value.");
-            Console.WriteLine("Choose an index between 0 and 5 to be greeted in a specific langauage");
+            Console.WriteLine("Choose an index between 0 and 4 to be greeted in a specific langauage");
             greetInput = Convert.ToInt32(Console.ReadLine());
 
         }
