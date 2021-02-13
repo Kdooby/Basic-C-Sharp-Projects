@@ -144,6 +144,8 @@ namespace _6_Part_Console_App
 
             Console.ReadLine();
 
+            // PART 6 \\
+
             List<string> fruitBowl = new List<string>();  // empty string to store items
 
             foreach (string f in fruits) // for each fruit in fruits
