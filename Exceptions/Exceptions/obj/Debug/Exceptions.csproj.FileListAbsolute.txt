@@ -1,0 +1,7 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Exceptions\Exceptions\bin\Debug\Exceptions.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Exceptions\Exceptions\bin\Debug\Exceptions.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Exceptions\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Exceptions\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Exceptions\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Exceptions\Exceptions\obj\Debug\Exceptions.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Exceptions\Exceptions\obj\Debug\Exceptions.pdb
