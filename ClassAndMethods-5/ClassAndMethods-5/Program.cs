@@ -20,15 +20,18 @@ namespace ClassAndMethods_5
 
             // Overloaded Class
 
-            mathClass d = new mathClass();
             Console.WriteLine("Enter a Decimal: ");
-            int input2 = Convert.ToInt32(Console.ReadLine());
+            decimal input2 = Convert.ToDecimal(Console.ReadLine());
 
-            d.DivideBy(input2, quotient: out int total);
+            n.DivideBy((int)input2, quotient: out decimal total);
             Console.ReadLine();
 
 
+            Class2.Method();
+            Console.ReadLine();
         }
+
+
        
         
     }
