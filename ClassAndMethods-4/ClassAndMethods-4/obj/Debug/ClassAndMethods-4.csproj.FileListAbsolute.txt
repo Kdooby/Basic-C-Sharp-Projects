@@ -1,0 +1,7 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-4\ClassAndMethods-4\bin\Debug\ClassAndMethods-4.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-4\ClassAndMethods-4\bin\Debug\ClassAndMethods-4.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-4\ClassAndMethods-4\bin\Debug\ClassAndMethods-4.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-4\ClassAndMethods-4\obj\Debug\ClassAndMethods-4.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-4\ClassAndMethods-4\obj\Debug\ClassAndMethods-4.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-4\ClassAndMethods-4\obj\Debug\ClassAndMethods-4.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-4\ClassAndMethods-4\obj\Debug\ClassAndMethods-4.pdb
