@@ -1,0 +1,7 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-5\ClassAndMethods-5\bin\Debug\ClassAndMethods-5.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-5\ClassAndMethods-5\bin\Debug\ClassAndMethods-5.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-5\ClassAndMethods-5\bin\Debug\ClassAndMethods-5.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-5\ClassAndMethods-5\obj\Debug\ClassAndMethods-5.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-5\ClassAndMethods-5\obj\Debug\ClassAndMethods-5.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-5\ClassAndMethods-5\obj\Debug\ClassAndMethods-5.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ClassAndMethods-5\ClassAndMethods-5\obj\Debug\ClassAndMethods-5.pdb
