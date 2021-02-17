@@ -1,0 +1,7 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Abstract\Abstract\bin\Debug\Abstract.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Abstract\Abstract\bin\Debug\Abstract.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Abstract\Abstract\bin\Debug\Abstract.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Abstract\Abstract\obj\Debug\Abstract.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Abstract\Abstract\obj\Debug\Abstract.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Abstract\Abstract\obj\Debug\Abstract.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Abstract\Abstract\obj\Debug\Abstract.pdb
