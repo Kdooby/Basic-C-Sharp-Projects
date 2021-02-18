@@ -1,0 +1,7 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\OverloadedOperators\OverloadedOperators\bin\Debug\OverloadedOperators.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\OverloadedOperators\OverloadedOperators\bin\Debug\OverloadedOperators.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\OverloadedOperators\OverloadedOperators\bin\Debug\OverloadedOperators.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\OverloadedOperators\OverloadedOperators\obj\Debug\OverloadedOperators.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\OverloadedOperators\OverloadedOperators\obj\Debug\OverloadedOperators.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\OverloadedOperators\OverloadedOperators\obj\Debug\OverloadedOperators.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\OverloadedOperators\OverloadedOperators\obj\Debug\OverloadedOperators.pdb
