@@ -1,0 +1,7 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Enums\Enums\bin\Debug\Enums.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Enums\Enums\bin\Debug\Enums.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Enums\Enums\bin\Debug\Enums.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Enums\Enums\obj\Debug\Enums.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Enums\Enums\obj\Debug\Enums.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Enums\Enums\obj\Debug\Enums.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Enums\Enums\obj\Debug\Enums.pdb
