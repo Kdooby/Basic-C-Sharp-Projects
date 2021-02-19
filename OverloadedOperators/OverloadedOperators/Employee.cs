@@ -31,11 +31,11 @@ namespace OverloadedOperators
         {
             if (employee1.ID != employee2.ID)
             {
-                return false;
+                return true;
             }
             else
             {
-                return true;
+                return false;
             }
 
         }
