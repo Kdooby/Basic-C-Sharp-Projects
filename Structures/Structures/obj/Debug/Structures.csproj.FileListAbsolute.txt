@@ -1,0 +1,7 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Structures\Structures\bin\Debug\Structures.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Structures\Structures\bin\Debug\Structures.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Structures\Structures\bin\Debug\Structures.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Structures\Structures\obj\Debug\Structures.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Structures\Structures\obj\Debug\Structures.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Structures\Structures\obj\Debug\Structures.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Structures\Structures\obj\Debug\Structures.pdb
