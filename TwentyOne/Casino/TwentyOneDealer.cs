@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TwentyOne
+namespace Casino.TwentyOne
 {
     public class TwentyOneDealer : Dealer
     {

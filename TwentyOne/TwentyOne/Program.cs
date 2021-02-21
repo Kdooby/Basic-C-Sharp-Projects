@@ -1,4 +1,7 @@
 ﻿using System;
+using System.IO;
+using Casino;
+using Casino.TwentyOne;
 
 namespace TwentyOne
 {
@@ -6,6 +9,10 @@ namespace TwentyOne
     {
         private static void Main(string[] args)
         {
+
+            
+
+            
             Console.WriteLine("\n\n\t\t\t\t*-*-*-*-*-*TUMBLEWEED'S GAMBLING HALL*-*-*-*-*-*\n\n");
             Console.ReadLine();
 
@@ -53,7 +60,7 @@ namespace TwentyOne
                 Console.WriteLine("\n\n\tThe Dealer's friendly smile turns to a frown as he eye's your coin purse.\n");
 
                 Console.ReadLine();
-                Console.WriteLine("DEALER: Well, having a High Roller in these parts are far and between these days" +
+                Console.WriteLine("DEALER: Well, having a High Roller in these parts are far and between these days." +
                     "\nLet's see if fortune will favor the brave today!");
                 Console.ReadLine();
             }
@@ -88,6 +95,12 @@ namespace TwentyOne
                 Console.Read();
 
                 Player player = new Player(playerName, bank); // New Player object.  Initalized with name and funds (from Player Constructor)
+                player.Id = Guid.NewGuid(); // Global Unique Identifier.  Access players Guid and look up player information. 
+                using (StreamWriter file = new StreamWriter(@"C:\Users\kevin\Desktop\Logs\log.txt", true)) // "using" clears the memory when done with application
+                {
+                    file.WriteLine(player.Id);
+                    
+                }
                 Game game = new TwentyOneGame(); // Create New Game.  Polymorphism
                 game += player;  // Adding Player to Game
                 player.IsActivelyPlaying = true;  // While Player is actively playing, and balance is above 0, play the game

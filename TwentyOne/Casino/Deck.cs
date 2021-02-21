@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TwentyOne
+namespace Casino
 {
     public class Deck
     {                    // Constructor.  A way of assigning values to an object immediately upon creation.

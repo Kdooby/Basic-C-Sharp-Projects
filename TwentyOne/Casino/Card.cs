@@ -1,4 +1,4 @@
-﻿namespace TwentyOne
+﻿namespace Casino
 {
     public struct Card
     {

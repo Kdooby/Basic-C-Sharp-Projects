@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TwentyOne
+namespace Casino
 {
     public class Player
     {
+
+        public Player(string name) : this(name, 50) //Inherates from other Constructor.  If player doesn't provide
+                                                    // a beginning balance, then use this as defualt.
+        {
+        }
         public Player(string name, int beginningBalance) //Constructor
         {
             Hand = new List<Card>();
@@ -20,6 +25,7 @@ namespace TwentyOne
         public string Name { get; set; }
         public bool IsActivelyPlaying { get; set; }
         public bool Stay { get; set; }
+        public Guid Id { get; set; }
 
         // Methods
         public bool Bet(int amount)
