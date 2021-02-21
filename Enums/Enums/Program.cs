@@ -18,8 +18,9 @@ namespace Enums
                 DaysOfWeek input = (DaysOfWeek)Enum.Parse(typeof(DaysOfWeek), today);
                 
                 {
-                    Console.WriteLine("It is {0} today!", today);
+                    Console.WriteLine("It is {0} today!", input);
                 }
+
                 
             } 
             catch (FormatException)
