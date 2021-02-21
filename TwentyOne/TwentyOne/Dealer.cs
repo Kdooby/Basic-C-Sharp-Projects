@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.IO;
+using System.Linq;
+
 namespace TwentyOne
 {
     public class Dealer
@@ -21,7 +22,7 @@ namespace TwentyOne
             using (StreamWriter file = new StreamWriter(@"C:\Users\kevin\Desktop\Logs\log.txt", true)) // "using" clears the memory when done with application
             {
                 file.WriteLine(card);
-            } 
+            }
             Deck.Cards.RemoveAt(0);  // Removes Item at Index
         }
     }
