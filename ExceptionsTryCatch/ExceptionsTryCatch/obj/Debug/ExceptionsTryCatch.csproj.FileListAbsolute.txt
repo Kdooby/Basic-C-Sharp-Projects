@@ -1,0 +1,7 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ExceptionsTryCatch\ExceptionsTryCatch\bin\Debug\ExceptionsTryCatch.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ExceptionsTryCatch\ExceptionsTryCatch\bin\Debug\ExceptionsTryCatch.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ExceptionsTryCatch\ExceptionsTryCatch\bin\Debug\ExceptionsTryCatch.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ExceptionsTryCatch\ExceptionsTryCatch\obj\Debug\ExceptionsTryCatch.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ExceptionsTryCatch\ExceptionsTryCatch\obj\Debug\ExceptionsTryCatch.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ExceptionsTryCatch\ExceptionsTryCatch\obj\Debug\ExceptionsTryCatch.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\ExceptionsTryCatch\ExceptionsTryCatch\obj\Debug\ExceptionsTryCatch.pdb

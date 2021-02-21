@@ -21,12 +21,24 @@ namespace Casino.TwentyOne
             Dealer.Stay = false; // Reset Stay to  False
             Dealer.Deck = new Deck(); // Dealer gets new Deck of Cards
             Dealer.Deck.Shuffle();
-            Console.Write("\nPlace your bet:\n$");
+            
 
             // PLAYER MAKES BET
             foreach (Player player in Players)
             {
-                int bet = Convert.ToInt32(Console.ReadLine());
+                bool validAnswer = false;
+                int bet = 0;
+                while (!validAnswer)
+                {
+                    Console.Write("Place your bet:\n{0}: $", player.Name);
+                    validAnswer = int.TryParse(Console.ReadLine(), out bet);
+                    if (!validAnswer) Console.WriteLine("DEALER: Oh come on now. Please enter digits only. And none of those fancy decimals!\n");
+                    Console.ReadLine();
+                }
+                if (bet < 0)
+                {
+                    throw new FraudException();
+                }
                 bool successfullyBet = player.Bet(bet); // Passing in amount they entered, into the Bet method
                 if (!successfullyBet) // if false
                 {
@@ -38,7 +50,7 @@ namespace Casino.TwentyOne
             // DEALING CARDS
             for (int i = 0; i < 2; i++)  // Dealing twice
             {
-                Console.ReadLine();
+                
                 Console.WriteLine("\nDealing...\n");
                 foreach (Player player in Players)
                 {

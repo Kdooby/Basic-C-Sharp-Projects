@@ -1,7 +1,7 @@
-﻿using System;
-using System.IO;
-using Casino;
+﻿using Casino;
 using Casino.TwentyOne;
+using System;
+using System.IO;
 
 namespace TwentyOne
 {
@@ -9,10 +9,6 @@ namespace TwentyOne
     {
         private static void Main(string[] args)
         {
-
-            
-
-            
             Console.WriteLine("\n\n\t\t\t\t*-*-*-*-*-*TUMBLEWEED'S GAMBLING HALL*-*-*-*-*-*\n\n");
             Console.ReadLine();
 
@@ -44,10 +40,20 @@ namespace TwentyOne
             Console.Write("\nDEALER: What's your name there fella?\nPLAYER: ");
             string playerName = Console.ReadLine().ToUpper();
 
-            Console.Write("\nDEALER: Welcome {0}!  You look like you have Lady Luck blessin' you today!" +
-                "\nMaybe your purse is a little heavier than usual...?" +
-                "\nHow much money you reckonin' to bet with anyhow?\n{0}: $", playerName);
-            int bank = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nDEALER: Welcome {0}! You look like you have Lady Luck blessin' you today!" +
+                "\nMaybe your purse is a little heavier than usual...?", playerName);
+            Console.ReadLine();
+            bool validAnswer = false;
+            int bank = 0;
+            while (!validAnswer)
+            {
+
+                Console.Write("DEALER: \nHow much money you reckonin' to bet with anyhow?:\n{0}: $", playerName);
+                validAnswer = int.TryParse(Console.ReadLine(), out bank);
+                if (!validAnswer) Console.Write("DEALER: Oh come on now. Please enter digits only. And none of those fancy decimals!\n");
+                Console.ReadLine();
+            }
+
             if (bank >= 100)
             {
                 Console.WriteLine("\n\n\tThe Dealer grins and eye's your coin purse, and then back up to you.\n");
@@ -95,18 +101,36 @@ namespace TwentyOne
                 Console.Read();
 
                 Player player = new Player(playerName, bank); // New Player object.  Initalized with name and funds (from Player Constructor)
-                player.Id = Guid.NewGuid(); // Global Unique Identifier.  Access players Guid and look up player information. 
+                player.Id = Guid.NewGuid(); // Global Unique Identifier.  Access players Guid and look up player information.
                 using (StreamWriter file = new StreamWriter(@"C:\Users\kevin\Desktop\Logs\log.txt", true)) // "using" clears the memory when done with application
                 {
                     file.WriteLine(player.Id);
-                    
                 }
                 Game game = new TwentyOneGame(); // Create New Game.  Polymorphism
                 game += player;  // Adding Player to Game
                 player.IsActivelyPlaying = true;  // While Player is actively playing, and balance is above 0, play the game
                 while (player.IsActivelyPlaying && player.Balance > 0)
                 {
-                    game.Play();
+                    try
+                    {
+                        game.Play();
+                    }
+                    catch (FraudException)
+                    {
+                        Console.WriteLine("DEALER: What're you trying to pull here!?\n" +
+                            "Best think twice before you decide to ROB ME!");
+                        Console.ReadLine();
+                        Console.WriteLine("\n\tThe Dealer grabs you by the collar and throws you out on the street!\n" +
+                            "\tYou pick yourself up and walk home with your head hangin' low.  The Mrs. isn't going to be happy about this one.");
+                        Console.ReadLine();
+                        Console.WriteLine("\tBetter luck next time, {0}", playerName);
+                        Console.Read();
+                        return;
+                    }
+                    catch (Exception)
+                    {
+                        
+                    }
                 }
 
                 while (player.IsActivelyPlaying && player.Balance <= 0)
