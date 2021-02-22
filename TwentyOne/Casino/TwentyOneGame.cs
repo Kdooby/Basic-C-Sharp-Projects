@@ -29,14 +29,14 @@ namespace Casino.TwentyOne
                 int bet = 0;
                 while (!validAnswer)
                 {
-                    Console.Write("Place your bet:\n{0}: $", player.Name);
+                    Console.Write("\nPlace your bet:\n{0}: $", player.Name);
                     validAnswer = int.TryParse(Console.ReadLine(), out bet);
-                    if (!validAnswer) Console.WriteLine("DEALER: Oh come on now. Please enter digits only. And none of those fancy decimals!\n");
+                    if (!validAnswer) Console.WriteLine("DEALER: \"Oh come on now. Please enter digits only. And none of those fancy decimals!\"\n");
                     Console.ReadLine();
                 }
                 if (bet < 0)
                 {
-                    throw new FraudException("You can't cheat me! You're out of here!");
+                    throw new FraudException("DEALER: \"You can't cheat me! You're out of here!\"");
                 }
                 bool successfullyBet = player.Bet(bet); // Passing in amount they entered, into the Bet method
                 if (!successfullyBet) // if false
@@ -67,11 +67,11 @@ namespace Casino.TwentyOne
                                 Console.Write("{0}", card.ToString());
                             }
                             Console.ReadLine();
-                            Console.WriteLine("\nDEALER: Hot Damn! BlackJack! We have a real Gun Slinger here!\n{0}, Lady Luck is on your side.  You won ${1}! ", player.Name, Bets[player]);
+                            Console.WriteLine("\nDEALER: \"Hot Damn! BlackJack! We have a real Gun Slinger here!\n{0}, Lady Luck is on your side.  You won ${1}!\" ", player.Name, Bets[player]);
                             player.Balance += Convert.ToInt32((Bets[player] * 1.5) + Bets[player]); // win your bet + 1.5, PLUS your own bet back
                             Console.WriteLine("\n\tYour balance is now ${1}", Bets[player], player.Balance);
                             Console.ReadLine();
-                            Console.WriteLine("\nDEALER: Do you want to try your luck again?");
+                            Console.Write("DEALER: \"I reckon you wanna try your luck again, eh {0}?\"\n{0}: ", player.Name);
                             string answer = Console.ReadLine().ToLower();
                             if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya"
                                 || answer == "yessir" || answer == "sure")
@@ -102,7 +102,7 @@ namespace Casino.TwentyOne
                         Console.ReadLine();
                         Console.WriteLine(); //Line Break
 
-                        Console.WriteLine("\nDEALER: Looks like I got BlackJack! Sorry folks, better luck next time.");
+                        Console.WriteLine("\nDEALER: \"Looks like I got BlackJack! Sorry folks, better luck next time.\"");
                         Console.ReadLine();
                         foreach (KeyValuePair<Player, int> entry in Bets)
                         {
@@ -111,8 +111,7 @@ namespace Casino.TwentyOne
                             {
                                 Console.WriteLine("\n\tYour balance is now ${1}", Bets[player], player.Balance);
                                 Console.ReadLine();
-                                Console.Write("DEALER: Do you want to try your luck again?\n{0}: ", player.Name);
-                                string answer = Console.ReadLine().ToLower();
+                                Console.Write("DEALER: \"I reckon you wanna try your luck again, eh {0}?\"\n{0}: ", player.Name); string answer = Console.ReadLine().ToLower();
                                 if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya"
                                     || answer == "yessir" || answer == "sure")
                                 {
@@ -160,11 +159,10 @@ namespace Casino.TwentyOne
                     if (busted)
                     {
                         Dealer.Balance += Bets[player];
-                        Console.WriteLine("\nDEALER: Oh dear...{0}, looks like you busted.", player.Name);
+                        Console.WriteLine("\nDEALER: \"Oh dear...{0}, looks like you busted.\"", player.Name);
                         Console.WriteLine("\n\tYou lost your bet of ${0}, and your balance is now ${1}", Bets[player], player.Balance);
                         Console.ReadLine();
-                        Console.Write("DEALER: Do you want to try your luck again?\n{0}: ", player.Name);
-                        answer = Console.ReadLine().ToLower();
+                        Console.Write("DEALER: \"I reckon you wanna try your luck again, eh {0}?\"\n{0}: ", player.Name); answer = Console.ReadLine().ToLower();
                         if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya"
                             || answer == "yessir" || answer == "sure")
                         {
@@ -211,11 +209,11 @@ namespace Casino.TwentyOne
                 Console.ReadLine();
                 Console.WriteLine(); //Line Break
 
-                Console.WriteLine("\nDEALER: Dang flabbit! I gone bust!");
+                Console.WriteLine("\nDEALER: \"Dang flabbit! I gone bust!\"");
                 Console.ReadLine();
                 foreach (KeyValuePair<Player, int> entry in Bets)
                 {
-                    Console.WriteLine("\nDEALER: Look at that Luck! {0}, you won ${1}!", entry.Key.Name, entry.Value);  //Key is (player) and has Name.
+                    Console.WriteLine("\nDEALER: \"Look at that Luck! {0}, you won ${1}!\"", entry.Key.Name, entry.Value);  //Key is (player) and has Name.
                     Players.Where(x => x.Name == entry.Key.Name).First().Balance += (entry.Value * 2);
                     Dealer.Balance -= entry.Value;
                 }
@@ -223,8 +221,7 @@ namespace Casino.TwentyOne
                 {
                     Console.WriteLine("\n\tYour balance is now ${1}", Bets[player], player.Balance);
                     Console.ReadLine();
-                    Console.Write("DEALER: Do you want to try your luck again?\n{0}: ", player.Name);
-                    string answer = Console.ReadLine().ToLower();
+                    Console.Write("DEALER: \"I reckon you wanna try your luck again, eh {0}?\"\n{0}: ", player.Name); string answer = Console.ReadLine().ToLower();
                     if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya"
                         || answer == "yessir" || answer == "sure")
                     {
@@ -246,29 +243,29 @@ namespace Casino.TwentyOne
                 bool? playerWon = TwentyOneRules.CompareHands(player.Hand, Dealer.Hand);
                 if (playerWon == null)
                 {
-                    Console.WriteLine("\nDEALER: That there is a Push! No one wins this round.");
+                    Console.WriteLine("\nDEALER: \"That there is a Push! No one wins this round.\"");
                     player.Balance += Bets[player]; // Player get their bet back
                     Console.ReadLine();
                 }
                 else if (playerWon == true)
                 {
-                    Console.WriteLine("\nDEALER: That was close!  Great Job {0}!", player.Name);
-                    Console.WriteLine("You have won ${0}!", Bets[player]);
+                    Console.WriteLine("\nDEALER: \"That was close!  Great Job {0}!\"", player.Name);
+                    Console.ReadLine();
+                    Console.WriteLine("\tYou have won ${0}!", Bets[player]);
                     player.Balance += (Bets[player] * 2);
                     Dealer.Balance -= Bets[player];
                     Console.ReadLine();
                 }
                 else
                 {
-                    Console.WriteLine("\nDEALER: Oh my, looks like fortune favors me this time.");
+                    Console.WriteLine("\nDEALER: \"Oh my, looks like fortune favors me this time.\"");
                     Console.WriteLine("\n\tThe Dealer has won ${0}!", Bets[player]);
                     Dealer.Balance += Bets[player];
                     Console.ReadLine();
                 }
                 Console.WriteLine("\tYour balance is now ${1}", Bets[player], player.Balance);
                 Console.ReadLine();
-                Console.Write("DEALER: Do you want to try your luck again?\n{0}: ", player.Name);
-                string answer = Console.ReadLine().ToLower();
+                Console.Write("DEALER: \"I reckon you wanna try your luck again, eh {0}?\"\n{0}: ", player.Name); string answer = Console.ReadLine().ToLower();
                 if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya"
                     || answer == "yessir" || answer == "sure")
                 {
