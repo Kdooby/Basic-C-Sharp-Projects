@@ -1,6 +1,8 @@
 ﻿using Casino;
 using Casino.TwentyOne;
 using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.IO;
 
 namespace TwentyOne
@@ -26,7 +28,7 @@ namespace TwentyOne
                 "\tYou gaze up at the large sign above the entrance way. Your eyes battle with the sun, trying to read what it says.");
             Console.ReadLine();
 
-            Console.WriteLine("\nDEALER: Howdy stranger! You made it to Tumbleweed's Gambling Hall! Come on in and get out of that sun!");
+            Console.WriteLine("\nDEALER: Howdy stranger! You made it to TumbleWeed's Gambling Hall! Come on in and get out of that sun!");
             Console.ReadLine();
 
             Console.WriteLine("\n\tYour eyes look down and peer passed the wood doors into the building." +
@@ -39,6 +41,21 @@ namespace TwentyOne
 
             Console.Write("\nDEALER: What's your name there fella?\nPLAYER: ");
             string playerName = Console.ReadLine().ToUpper();
+            if (playerName.ToLower() == "admin")   // if player types in "admin".  Accesses database and shows all of the error exceptions.
+                                                    // Does not execute the game. 
+            {
+                List<ExceptionEntity> Exceptions = ReadExceptions();
+                foreach (var exception in Exceptions)
+                {
+                    Console.Write(exception.Id + " ");
+                    Console.Write(exception.ExceptionType + " ");
+                    Console.Write(exception.ExceptionMessage + " ");
+                    Console.Write(exception.TimeStamp + " ");
+                    Console.WriteLine();
+                }
+                Console.Read();
+                return;
+            }
 
             Console.WriteLine("\nDEALER: Welcome {0}! You look like you have Lady Luck blessin' you today!" +
                 "\nMaybe your purse is a little heavier than usual...?", playerName);
@@ -47,7 +64,6 @@ namespace TwentyOne
             int bank = 0;
             while (!validAnswer)
             {
-
                 Console.Write("DEALER: \nHow much money you reckonin' to bet with anyhow?:\n{0}: $", playerName);
                 validAnswer = int.TryParse(Console.ReadLine(), out bank);
                 if (!validAnswer) Console.Write("DEALER: Oh come on now. Please enter digits only. And none of those fancy decimals!\n");
@@ -115,7 +131,7 @@ namespace TwentyOne
                     {
                         game.Play();
                     }
-                    catch (FraudException)
+                    catch (FraudException ex)
                     {
                         Console.WriteLine("DEALER: What're you trying to pull here!?\n" +
                             "Best think twice before you decide to ROB ME!");
@@ -124,12 +140,19 @@ namespace TwentyOne
                             "\tYou pick yourself up and walk home with your head hangin' low.  The Mrs. isn't going to be happy about this one.");
                         Console.ReadLine();
                         Console.WriteLine("\tBetter luck next time, {0}", playerName);
+                        UpdateDbWithException(ex);
                         Console.Read();
                         return;
                     }
-                    catch (Exception)
+                    catch (Exception ex)
+
                     {
-                        
+                        Console.WriteLine("\n\tHmm...It looks like TumbleWeeds is going through some maintance.\n" +
+                            "\tAwfully sorry to be cuttin things short.\n" +
+                            "\tWe hope to see you here again very soon!");
+                        UpdateDbWithException(ex);
+                        Console.Read();
+                        return;
                     }
                 }
 
@@ -142,6 +165,66 @@ namespace TwentyOne
             Console.WriteLine("\nDEALER: Thank you for comin' in today, {0}.  We appreciate your business! ", playerName);
             Console.WriteLine("DEALER: Come on back now, you hear!?");
             Console.Read();
+        }
+
+        // DATABASE HANDLING
+
+        private static void UpdateDbWithException(Exception ex)
+        {
+            string connectionString = @"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = TwentyOneGame; Integrated Security = True;
+                                        Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False;
+                                        ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+
+            string queryString = @"INSERT INTO Exceptions (ExceptionType, ExceptionMessage, TimeStamp) VALUES" +
+                                "(@ExceptionType, @ExceptionMessage, @TimeStamp)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Parameters.Add("@ExceptionType", System.Data.SqlDbType.VarChar);
+                command.Parameters.Add("@ExceptionMessage", System.Data.SqlDbType.VarChar);
+                command.Parameters.Add("@TimeStamp", System.Data.SqlDbType.DateTime);
+
+                command.Parameters["@ExceptionType"].Value = ex.GetType().ToString();
+                command.Parameters["@ExceptionMessage"].Value = ex.Message;
+                command.Parameters["@TimeStamp"].Value = DateTime.Now;
+
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+        }
+
+        private static List<ExceptionEntity> ReadExceptions()
+        {
+            string connectionString = @"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = TwentyOneGame; Integrated Security = True;
+                                        Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False;
+                                        ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+
+            string queryString = @"Select Id, ExceptionType, ExceptionMessage, TimeStamp From Exceptions";
+
+            List<ExceptionEntity> Exceptions = new List<ExceptionEntity>();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    ExceptionEntity exception = new ExceptionEntity();
+                    exception.Id = Convert.ToInt32(reader["Id"]);
+                    exception.ExceptionType = reader["ExceptionType"].ToString();
+                    exception.ExceptionMessage = reader["ExceptionMessage"].ToString();
+                    exception.TimeStamp = Convert.ToDateTime(reader["TimeStamp"]);
+                    Exceptions.Add(exception);
+                }
+                connection.Close();
+            }
+            return Exceptions;
         }
     }
 }

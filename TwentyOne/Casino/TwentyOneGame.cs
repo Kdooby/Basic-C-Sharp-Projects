@@ -21,7 +21,6 @@ namespace Casino.TwentyOne
             Dealer.Stay = false; // Reset Stay to  False
             Dealer.Deck = new Deck(); // Dealer gets new Deck of Cards
             Dealer.Deck.Shuffle();
-            
 
             // PLAYER MAKES BET
             foreach (Player player in Players)
@@ -37,7 +36,7 @@ namespace Casino.TwentyOne
                 }
                 if (bet < 0)
                 {
-                    throw new FraudException();
+                    throw new FraudException("You can't cheat me! You're out of here!");
                 }
                 bool successfullyBet = player.Bet(bet); // Passing in amount they entered, into the Bet method
                 if (!successfullyBet) // if false
@@ -50,7 +49,6 @@ namespace Casino.TwentyOne
             // DEALING CARDS
             for (int i = 0; i < 2; i++)  // Dealing twice
             {
-                
                 Console.WriteLine("\nDealing...\n");
                 foreach (Player player in Players)
                 {
