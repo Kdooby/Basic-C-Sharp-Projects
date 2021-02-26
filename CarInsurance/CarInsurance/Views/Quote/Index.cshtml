@@ -1,0 +1,93 @@
+﻿<h2 class="card-header text-center">Start Quote!</h2class="card-header>
+<h3 class="card-header text-center">Please tell us a little about yourself:</h3>
+<br />
+<div class="row-no-gutters ">
+  <div class="card col-sm-12 col-md-12 col-lg-12 mx-auto shadow">
+    <div class="card-header text-center">
+      <div class="=card-body">
+
+        @using (Html.BeginForm("Apply", "Quote", FormMethod.Post))
+        {
+        <div class="row mb-3 no-gutters">
+          <div class="col-4">
+            <p>First Name:</p>
+            <input name="FirstName" type="text" placeholder="First Name" />
+          </div>
+          <br />
+
+          <div class="col-4">
+            <p>Last Name:</p>
+            <input name="LastName" type="text" placeholder="Last Name" />
+          </div>
+          <br />
+
+          <div class="col-4">
+            <p>Email Address:</p>
+            <input name="EmailAddress" type="email" placeholder="Email Address" />
+          </div>
+          <br />
+
+          <div class="col-4">
+            <p>Date of Birth:</p>
+            <input name="DateOfBirth" type="text" placeholder="MM/DD/YYYY" />
+          </div>
+          <br />
+
+          <div class="col-4">
+            <p>Car Year:</p>
+            <input name="CarYear" type="text" placeholder="YYYY" />
+          </div>
+          <br />
+
+          <div class="col-4">
+            <p>Car Make:</p>
+            <input name="CarMake" type="text" placeholder="ex. Mazda" />
+          </div>
+          <br />
+
+          <div class="col-4">
+            <p>Car Model:</p>
+            <input name="CarModel" type="text" placeholder="ex. CX-5" />
+          </div>
+          <br />
+
+          <div class="col-4">
+            <p>Have you had a DUI?</p>
+            <input name="Dui" type="text" placeholder="Yes or No" />
+          </div>
+          <br />
+
+          <div class="col-4">
+            <p>Speeding Tickets:</p>
+            <input name="Tickets" type="text" placeholder="No. of Tickets" />
+          </div>
+          <br />
+
+          <div class="col-4">
+            <p>Full or Liability Coverage?</p>
+            <input name="Coverage" type="text" placeholder="Full or Liability" />
+          </div>
+          <br />
+          <br />
+          <div class="col-4">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+          
+
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+
+@*<div class="card-body bg-success img-rounded">
+  <div class="form-horizontal">
+    <h3>
+      Your total quote is:<br /><br />
+      $@ViewData["quote.Total"]
+    </h3>
+  </div>
+</div>*@
