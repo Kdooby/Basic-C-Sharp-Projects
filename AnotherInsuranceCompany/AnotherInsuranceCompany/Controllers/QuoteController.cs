@@ -63,9 +63,10 @@ namespace AnotherInsuranceCompany.Controllers
                 int totalQuote = 50;
 
                 // Quote based on Age
-                totalQuote = (DateTime.Now.Year - (Convert.ToDateTime(dateOfBirth)).Year < 25) ? totalQuote + 25 : totalQuote;
                 totalQuote = (DateTime.Now.Year - (Convert.ToDateTime(dateOfBirth)).Year < 18) ? totalQuote + 100 : totalQuote;
-                totalQuote = (DateTime.Now.Year - (Convert.ToDateTime(dateOfBirth)).Year > 100) ? totalQuote + 25 : totalQuote;
+                totalQuote = (DateTime.Now.Year - (Convert.ToDateTime(dateOfBirth)).Year <= 25) ? totalQuote + 50 : totalQuote;
+                totalQuote = (DateTime.Now.Year - (Convert.ToDateTime(dateOfBirth)).Year > 25) ? totalQuote + 25 : totalQuote;
+                
 
                 // Quote based on Car
                 totalQuote = (Convert.ToInt32(carYear) < 2000) ? totalQuote + 25 : totalQuote;
