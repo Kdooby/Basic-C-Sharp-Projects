@@ -5,6 +5,7 @@ using System.Web.Mvc;
 namespace AnotherInsuranceCompany.Controllers
 {
     public class QuoteController : Controller
+    
     {
         // GET: Quote
         public ActionResult Index()
@@ -55,6 +56,7 @@ namespace AnotherInsuranceCompany.Controllers
             }
         }
 
+
         public int quoteTotal(DateTime dateOfBirth, int carYear, string carMake, string carModel,
                                   string dui, int tickets, string coverage)
         {
@@ -67,7 +69,6 @@ namespace AnotherInsuranceCompany.Controllers
                 totalQuote = (DateTime.Now.Year - (Convert.ToDateTime(dateOfBirth)).Year <= 25) ? totalQuote + 50 : totalQuote;
                 totalQuote = (DateTime.Now.Year - (Convert.ToDateTime(dateOfBirth)).Year > 25) ? totalQuote + 25 : totalQuote;
                 
-
                 // Quote based on Car
                 totalQuote = (Convert.ToInt32(carYear) < 2000) ? totalQuote + 25 : totalQuote;
                 totalQuote = (Convert.ToInt32(carYear) > 2015) ? totalQuote + 25 : totalQuote;
@@ -86,3 +87,4 @@ namespace AnotherInsuranceCompany.Controllers
         }
     }
 }
+
