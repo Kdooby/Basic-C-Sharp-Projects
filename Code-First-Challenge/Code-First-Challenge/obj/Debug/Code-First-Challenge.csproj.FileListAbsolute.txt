@@ -1,0 +1,12 @@
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\obj\Debug\Code-First-Challenge.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\obj\Debug\Code-First-Challenge.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\bin\Debug\Code-First-Challenge.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\bin\Debug\Code-First-Challenge.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\bin\Debug\Code-First-Challenge.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\bin\Debug\EntityFramework.dll
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\bin\Debug\EntityFramework.xml
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\obj\Debug\Code-First-Challenge.csproj.CopyComplete
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\obj\Debug\Code-First-Challenge.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\Code-First-Challenge\Code-First-Challenge\obj\Debug\Code-First-Challenge.pdb

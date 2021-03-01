@@ -1,0 +1,19 @@
+﻿@using System;
+@using Microsoft.AspNetCore.Mvc.RazorPages;
+
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["Time"] = DateTime.Now.ToShortTimeString();
+}
+
+<div class="text-center">
+  <h1 class="display-4">Welcome to my sample ASP.Net Core Website</h1>
+  <h2>Using simple code and the ASP.Net Core Framework, I will display the <strong>actual server time</strong>.</h2>
+</div>
+<br />
+<br />
+<div class="text-center">
+  <h3>The Time and date, right now, is:</h3>
+  <form method="post"><input type="button" class="btn btn-primary" value="Click Here" onclick="window.alert('@ViewData["Time"]');"></form>
+  <br />
+</div>
