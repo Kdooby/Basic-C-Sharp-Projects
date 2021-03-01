@@ -6,5 +6,7 @@ Basic C# Projects from The Tech Academy program
   
 <ul>
   <li><a href="https://github.com/Kdooby/Basic-C-Sharp-Projects/tree/main/AnotherInsuranceCompany">Car Insurance</li>
-    
+  <li><a href="https://github.com/Kdooby/Basic-C-Sharp-Projects/tree/main/TwentyOne/TwentyOne">Black Jack</li>  
 </ul>
+
+
